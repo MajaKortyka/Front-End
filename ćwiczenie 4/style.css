@@ -1,0 +1,19 @@
+:root {
+    font-size: 20px;
+}
+body {
+    background-color: blanchedalmond;
+}
+.header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5% 0;
+}
+.nav {
+    background-color: cornflowerblue;
+}
+.logo {
+    width: 500px;
+    height: 200px;
+    background-image: url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw1/logo_sprites.jpg?raw=true);
+}

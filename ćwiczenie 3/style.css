@@ -1,0 +1,41 @@
+body {
+    background-color: darkolivegreen;
+}
+h1  {
+    color:darkorange;
+}
+.parent {
+    border: 5px dashed red;
+    display: flex;
+    justify-content: space-evenly;
+}
+.parent div {
+ border: 4px dashed darkblue;
+ width: 20%;   
+}
+.parent div img {
+    width: 100%;
+}
+.content {
+    border: 2px dashed yellow;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+.content div {
+    border: 2px dashed purple;
+}
+.content img {
+    width 100%;
+}
+.content desc {
+    padding:2%; 
+    margin:2%;
+}
+.footer {
+    border: 2px dashed pink;
+    margin-top:2%;
+    padding: 5% 2%;
+    text-align: right;
+}
+    
