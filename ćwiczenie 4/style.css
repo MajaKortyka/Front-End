@@ -17,3 +17,10 @@ body {
     height: 200px;
     background-image: url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw1/logo_sprites.jpg?raw=true);
 }
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.buttons div {
+    padding: 2%;
+}
