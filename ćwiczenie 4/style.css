@@ -24,3 +24,60 @@ body {
 .buttons div {
     padding: 2%;
 }
+.chartContainer {
+    background-color: darkolivegreen;
+    padding: 2%;
+    padding-top: 1%;
+    margin- bottom: 2%;
+}
+.chart {
+    height: 40vh;
+    min-height: 5cm;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px dashed red;
+}
+.vertical div:nth-child(1) {
+    height: 8px;
+}
+.vertical div {
+    width: 10%;
+}
+.chart div {
+    background-color: blueviolet;
+}
+.vertical div:nth-child(2) {
+    height: 8mm;
+}
+.vertical div:nth-child(3) {
+    height: 8pc;
+}
+.vertical div:nth-child(4) {
+    height: 8cm;
+}
+.horizontal {
+    flex-direction: column;
+}
+.horizontal div:nth-child(1) {
+    width: 8vw;
+}
+.horizontal div {
+    height: 10%;
+}
+.horizontal div:nth-child(2) {
+    width: 8%;
+}
+.horizontal div:nth-child(3) {
+    width: 8em;
+}
+.horizontal div:nth-child(4) {
+    width: 8rem;
+}
+.ems {
+    font-size: 16px;
+    text-align: right;
+}
+.em {
+    display: inline;
+    font-size: 1.5em;
+}
