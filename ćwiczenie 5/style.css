@@ -1,0 +1,39 @@
+.static {
+	position: static;
+}
+body div {
+	border: 2px dashed red;
+	box-sizing: border-box;
+}
+.fixed {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+.sticky {
+	position: sticky;
+	top: 10px;
+	background-color: red;
+	z-index: 1;
+}
+.relative {
+	position: relative;
+	border: 5px dashed green;
+	height: 20vh;
+}
+.absolute {
+	position: static;
+	border: 2px solid yellow;
+}
+.media {
+	display: flex;
+}
+.element {
+	height: 150vh;
+}
+
+
+
+
+	
