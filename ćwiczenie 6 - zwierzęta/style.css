@@ -36,7 +36,7 @@ body {
     background-image: url(https://raw.githubusercontent.com/apietryga/kurs-Front-end/master/materialy/lekcja2/cw2/zebra.jpg);
 }
 .flexContainer div .show {
-    background-color: rgb(151, 224, 217);
+    background-color: rgb(158, 223, 216);
     display: flex;
     justify-content: center;
     align-items: center;
