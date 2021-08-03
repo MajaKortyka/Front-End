@@ -41,3 +41,8 @@ a {
     width: 100%;
     background-color: darkolivegreen;
 }
+@media (max-width:720px) {
+    .grid {
+        display: block;
+    }
+}
