@@ -1,3 +1,56 @@
 body {
-    
+    background-image: url("https://raw.githubusercontent.com/MajaKortyka/Front-End/master/%C4%87wiczenie%208%20-%20menu/img/more-leaves.png");  
+}
+.nav {
+    position:sticky;
+    top: 0;
+    padding: 0 2%;
+    z-index: 1;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+}
+ul, li, ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul > li {
+    flex: 1;
+    border: 2px dashed green;
+    text-align: center;
+    position: relative;
+}
+ol {
+    border: 2px dashed red;
+    position: absolute;
+    width: 100%;
+    background-color: honeydew;
+}
+ol {
+    display: none;
+}
+.content {
+    display: flex;
+}
+.content .left {
+    flex:4;
+}
+.content .left img {
+    max-width: 100%;
+}
+h4 {
+    margin-bottom: 0;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(167, 207, 96);
+}
+@media (max-width:720px) {
+    .grid {
+        display: block;
+    }
 }
