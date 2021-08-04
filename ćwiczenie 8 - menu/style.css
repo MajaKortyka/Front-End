@@ -28,12 +28,13 @@ ol {
     position: absolute;
     width: 100%;
     background-color: honeydew;
-}
-ol {
     display: none;
 }
 .content {
     display: flex;
+}
+li:hover ol {
+    display:block;
 }
 .content .left {
     flex:4;
@@ -50,7 +51,7 @@ h4 {
     background-color: rgb(167, 207, 96);
 }
 @media (max-width:720px) {
-    .grid {
+        .content { 
         display: block;
     }
 }
