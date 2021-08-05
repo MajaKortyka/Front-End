@@ -1,5 +1,4 @@
- 
- * {
+  * {
      box-sizing: border-box;
  }
  body {
@@ -7,109 +6,89 @@
      margin:0;
  }
  body > header {
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     padding: 2%;
-     background-color: khaki;
-     position: sticky;
-     top: 0;
- }
- body > header > * {
-     flex: 1;
- }
- body > header > nav > ul {
-     padding: 0;
-     list-style-type: none;
-     display: flex;
-     justify-content: flex-end;
-     gap: 2%;
-     margin: 0;
- }
- body > header > nav > ul > li {
-    cursor: pointer;
- }
- body > main {
-     padding: 0 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2%;
+  background-color: khaki;
+  position: sticky;
+  top: 0;
+}
+body > header > * {
+  flex: 1;
+}
+body > header > nav > ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2%;
+  margin: 0;
+}
+body > header > nav > ul > li {
+  cursor: pointer;
+}
+body > main {
+  padding: 0 15%;
 }
 body > main .post {
-    padding-bottom: 2%;
+  padding-bottom: 2%;
 }
 body > main > .post > article {
-    border: 1px solid khaki;
-    padding: 2%;
-    margin: 2%;
-    margin-bottom: 0;
-    background-color:skyblue;
+  border: 3px solid khaki;
+  padding: 2%;
+  margin: 2%;
+  margin-bottom: 0;
+  background-color:paleturquoise;
 }
 body > main > .post > article > header {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 body > main > .post > article > header > .avatar {
-    min-height: 50px;
-    min-width: 50px;
-    background-color: snow;
+  min-height: 50px;
+  min-width: 50px;
+  background-color:teal;
 }
 body > main > .post > article > header > .name {
-    padding-left: 2%;
-    font-weight: bolder;
+  padding-left: 2%;
+  font-weight: bolder;
 }
 body > main > .post > article > section {
-    padding: 1%;
-    background-color: thistle;
-}
-body > main > .post > .comments {
-    margin: 0 2% 0 5%;
-}
-body > main > .post > .comments > .comment {
-    border: 1px solid sandybrown;
-    background-color:skyblue;
-    padding: 2%;
-}
-body > main > .post > .comments > .comment > header {
-    display: flex;
-    align-items: center;
-}
-body > main > .post > .comments > .comment > header > .avatar {
-    background-color: violet;
-    min-width: 40px;
-    min-height: 40px;
-}
-body > main > .post > .comments > .comment > header > .name {
-    padding-left: 2%;
-    font-weight: 600;
-}
-body > main > .post > .comments > .comment > header > section {
-    background-color:skyblue;
-    padding: 2%;
+  padding: 1%;
+  background-color: teal;
 }
 body > aside {
-    position: fixed;
-    right: 0;
-    height: 30vh;
-    top: 30vh;
+  position: fixed;
+  right: 0;
+  height: 30vh;
+  top: 30vh;
 }
 body > aside > ul {
-    margin: 0;
-    list-style-type: none;
-    padding: 3px;
-    background-color: khaki;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    gap: 2px;
-    justify-content: space-evenly;
+  margin: 0;
+  list-style-type: none;
+  padding: 3px;
+  background-color: khaki;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 2px;
+  justify-content: space-evenly;
 }
 body > aside > ul > li {
-    border:2px solid;
-    padding: 10px;
+  border:2px solid;
+  padding: 10px;
 }
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    justify-content: center;
-    background-color:khaki;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  background-color:khaki;
+}
+@media (max-width:720px) {
+  .content { 
+  display: block;
+}
 }
