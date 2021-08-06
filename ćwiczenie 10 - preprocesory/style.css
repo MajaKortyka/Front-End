@@ -3,7 +3,7 @@
           box-sizing: border-box;
 }
 
-body > section header {
+body > section header, body main div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,6 +49,49 @@ body > section header {
 body > section img {
   max-width: 50%;
   max-height: 50%;
+}
+
+body main {
+  background-image: url("https://raw.githubusercontent.com/MajaKortyka/Front-End/master/ep_naturalwhite.png");
+  border: 3px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main div {
+  border: 3px solid red;
+  height: 30vh;
+  padding: 5%;
+}
+
+body main div img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+body main div:nth-child(1) {
+  background-color: #0000d2;
+}
+
+body main div:nth-child(2) {
+  background-color: #2424ff;
+}
+
+body main div:nth-child(3) {
+  background-color: #7676ff;
+}
+
+body main div:nth-child(4) {
+  background-color: #c7c7ff;
+}
+
+body main div:nth-child(5) {
+  background-color: white;
+}
+
+body main div:nth-child(6) {
+  background-color: white;
 }
 
 body footer ul a {
