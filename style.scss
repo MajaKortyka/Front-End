@@ -55,15 +55,17 @@ body{
         max-height:70%;
       }
     }
-    article{
-      flex:2;
+    header{
+      // border:2px dashed blue;
+      background-color:rgba(255, 255, 255, 0.15);
+      flex:1 0;
+      // padding:5%;
       @extend %centered;
-      flex-direction:column;
-      p{
-        padding:2%;
+      img{
+        max-width:70%;
+        max-height:70%;
       }
     }
-  }
   main{
     border:$borderSize $border $borderColor;
     display:grid;

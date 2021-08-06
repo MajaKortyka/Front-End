@@ -1,9 +1,45 @@
-* { 
-    box-sizing: border-box;
+$bgColor: orange;
+$borderColor:red;
+$border:solid;
+$borderSize:3px;
+$text-decoration:none;
+$background-image: url("https://raw.githubusercontent.com/MajaKortyka/Front-End/master/ep_naturalwhite.png");
+*{box-sizing:border-box;}
+%centered{
+  display:flex;
+  justify-content: center;
+  align-items:center;
 }
 body {
-    background-image: url("https://raw.githubusercontent.com/MajaKortyka/Front-End/master/ep_naturalwhite.png");
+  margin:0;
+  background-image: $background-image;
+  >header{
+    border:$borderSize $border $borderColor;
+    text-align:center;
+    background-color: yellowgreen;
+    color: black;
+  }
+  >section{
+      min-height:30vh;
+      border:$borderSize $border $borderColor;
+      background-color: violet ;
+      display:flex;
+    header{
+      background-color:darkviolet;
+      flex:1 0;
+      @extend %centered;
+      display:flex;
+    }
+    img{
+      max-width:50%;
+      max-height:50%;
+    }
+  }
+  footer {
+    ul {
+      a {
+    text-decoration: $text-decoration;
+      }
+    } 
+   }
 }
-
-    
-
