@@ -1,0 +1,91 @@
+ <!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial - scale=1.0">
+        <title>Game</title>
+    <style>
+        *{box-sizing: border-box;}
+        body {
+        margin: 0;
+        background-color: rgb(240, 240, 126);
+        }
+        .plan  {
+        border: 3px solid green;
+        width:80vw;
+        height:80vh;
+        margin:10vh 10vw;
+        position:relative;
+        }
+        .plan div {
+            position: absolute;
+        }
+        .wall {
+        background-color: rgb(104, 23, 104);
+        }
+        .start {
+            background-color: orange;
+        }
+        .meta {
+            background-color: teal;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="plan"></div>
+        <script>
+            function makeWall(w,h,x,y, type = "wall") {
+                const wall = document.createElement("div");
+                wall.className = type;
+                wall.style.width = w + "vw";
+                wall.style.height = h + "vh";
+                wall.style.marginLeft = x + "vw";
+                wall.style.marginTop = y + "vh";
+                const plan = document.querySelector(".plan");
+                plan.append(wall);}
+            const stage = [
+                [30,5,0,0,],
+                [5,10,0,5,"start"],
+                [20,5,0,15],
+                [5,35,30,0],
+                [5,20,15,15],
+                [10,10,20,25,"meta"]
+            ];
+            function makeStage(stage) {
+                for(const w of stage) {
+                    makeWall(w[0],w[1],w[2],w[3],w[4]);
+                }
+            }
+            makeStage(stage);
+            const game = {
+                plan:
+            document.querySelector(".plan"),
+                buttons: {},
+                initButtons(){
+                    game.buttons.start = this.plan.querySelector(".start");
+                    game.buttons.meta = this.plan.querySelector(".meta");
+                    game.buttons.walls = (func = () => {} => {
+                        for(const w of this.plan.querySelectorAll(".wall")){
+                            w.onmouseover = () => {func()}
+                        }
+                    },
+                init(){
+                    makeStage(stage);
+                    this.initButtons();
+                    this.buttons.start.onclick = () => { game.start() };
+                },
+                start(){
+                    console.log("GAME STARTED");
+                    this.buttons.start.onclick = () => {};
+                    this.buttons.meta.onmouseover = () => {game.end(true);}
+                },
+                end(){
+                    console.log("GAME ENDED")
+                    this.buttons.meta.onmouseover = () => {};
+                    this.buttons.start.onclick = () => {this.start()};
+                }
+            }
+        </script>
+    </body>
+</html>
