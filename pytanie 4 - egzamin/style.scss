@@ -1,0 +1,74 @@
+$border: dashed;
+$borderColor: red;
+$borderSize: 3px;
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    border: $border $borderColor $borderSize;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+body {
+    background-image: url("https://raw.githubusercontent.com/MajaKortyka/Front-End/master/%C4%87wiczenie%208%20-%20menu/img/more-leaves.png"); 
+    border: 3px solid black;
+    >header {
+        display: flex;
+        border: 3px solid black;
+        >nav {
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            flex: 1;
+            >img {
+                border: $border $borderColor $borderSize;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1%;
+        position: sticky;
+        top: 0;
+        >div {
+            border: 3px solid black;
+            flex: 1;
+            margin-right: 150px;
+            margin-left: 150px;
+            margin-top: 30px;
+        }
+        >section {
+        width:80%;
+        height: 80%;
+        border: 3px solid black;
+        margin-top: 30px;
+        margin-bottom: 100px;
+         >article {
+            border: $border $borderColor $borderSize;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-right: 30px;
+            margin-left: 30px;
+         }
+        }
+    }
+}
+    footer {
+    display: flex;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+        >ul {
+        border: 3px solid black;
+        margin-right: 150px;
+        margin-left: 150px;
+        } 
+    }

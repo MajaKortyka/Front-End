@@ -1,0 +1,108 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  border: dashed red 3px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+body {
+  background-image: url("https://raw.githubusercontent.com/MajaKortyka/Front-End/master/%C4%87wiczenie%208%20-%20menu/img/more-leaves.png");
+  border: 3px solid black;
+}
+
+body > header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 3px solid black;
+}
+
+body > header > nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body > header > nav > img {
+  border: dashed red 3px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+body main > div {
+  border: 3px solid black;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 150px;
+  margin-left: 150px;
+  margin-top: 30px;
+}
+
+body main > section {
+  width: 80%;
+  height: 80%;
+  border: 3px solid black;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+body main > section > article {
+  border: dashed red 3px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+footer > ul {
+  border: 3px solid black;
+  margin-right: 150px;
+  margin-left: 150px;
+}
+/*# sourceMappingURL=style.css.map */
